@@ -17,9 +17,9 @@ export enum WalletType {
   WalletConnect,
 }
 
-const WBNB_ADDRESS = "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c";  // testnet: "0xae13d989dac2f0debff460ac112a837c89baa7cd" 
+const WBNB_ADDRESS = "0x0BE9e53fd7EDaC9F859882AfdDa116645287C629";  // testnet: "0xae13d989dac2f0debff460ac112a837c89baa7cd"
                                                                     // mainnet: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
-const BUSD_ADDRESS = "0x55d398326f99059ff775485246999027b3197955";  // testnet: "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7" 
+const BUSD_ADDRESS = "0x6a5f6a8121592becd6747a38d67451b310f7f156";  // testnet: "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7"
                                                                     // mainnet: "0x55d398326f99059ff775485246999027b3197955"
 
 
@@ -38,20 +38,20 @@ export default class MetamaskService {
 
 
 
-  public async initialize() { 
+  public async initialize() {
     this.oneMkatBnb = await this.getOneMkatPrice();
     this.contract = this.getBabyCakeContractInstance(CONTRACT_ADDRESS);
   }
 
-  public getWeb3Provider() { 
+  public getWeb3Provider() {
     return this.web3Provider;
   }
 
   public static async createWalletProviderFromType(type: WalletType) {
     if (type == WalletType.WalletConnect) {
       const walletConnectProvider = new WalletConnectProvider({
-        rpc: { 56: "https://bsc-dataseed.binance.org/" },
-        chainId: 56,
+        rpc: { 122: "https://rpc.fuse.io/" },
+        chainId: 122,
         qrcode: true, // Required
       });
 
@@ -63,7 +63,7 @@ export default class MetamaskService {
       return window.ethereum;
     } else throw new Error("Invalid type");
   }
-    
+
   public getCurrentWalletProvider() { return this.walletProvider; }
 
   public async switchChainAsync(newChainId: Number): Promise<boolean>  {
@@ -80,7 +80,7 @@ export default class MetamaskService {
   }
 
 
-  public getTokenContractInstance() { 
+  public getTokenContractInstance() {
     return this.contract;
   }
 
@@ -88,7 +88,7 @@ export default class MetamaskService {
     const provider = this.web3Provider;
 
     const signer = provider.getSigner();
-    
+
     return new ethers.Contract(contractAddress, babyCakeContractAbi, signer);
   }
 
@@ -96,7 +96,7 @@ export default class MetamaskService {
     const provider = this.web3Provider;
     const signer = provider.getSigner();
     const babyCakeContract = this.getBabyCakeContractInstance(babyTokenAddress);
-    
+
     return new ethers.Contract(await babyCakeContract.CAKE(), babyCakeContractAbi, signer);
   }
 
@@ -132,7 +132,7 @@ export default class MetamaskService {
         const res = await contract.getAmountsOut(amount, path);
         return res;
       }
-    }catch(ex) { 
+    }catch(ex) {
       console.error(`getPricesPath() exception: ${ex}`);
       return new Array(path.length).fill(BigNumber.from([0]));
     }
@@ -157,7 +157,7 @@ export default class MetamaskService {
   }
 
   public async getMkatPriceInBnb(amount: BigNumber) : Promise<BigNumber> {
-    if (amount.isZero()) 
+    if (amount.isZero())
       return new Promise(resolve => resolve(BigNumber.from("0")));
 
     const pathResult = await this.getMkatBnbUsdPrices(amount);
@@ -214,7 +214,7 @@ export default class MetamaskService {
     return tokenBalance;
   }
 
-  public async getOneMkatPrice(): Promise<BigNumber> { 
+  public async getOneMkatPrice(): Promise<BigNumber> {
     return await this.getMkatPriceInBnb(utils.parseUnits("1", 18));
   }
 }
