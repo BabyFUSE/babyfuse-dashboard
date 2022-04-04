@@ -6,7 +6,7 @@
           <img src="@/assets/images/beaglecakeLogo.png" class="logo" alt="BabyFuse" />
         </router-link>
       </div>
-      <div class="mrat-text hide-on-mobile" style="color: #190053">BABYFUSE</div>
+      <div class="mrat-text hide-on-mobile" style="color: #9dc64e">BABYFUSE</div>
       <div class="mrat-desc">A new way to earn FUSE</div>
       <div class="button-buy-mrat hide-on-mobile">
         <a
@@ -187,9 +187,9 @@ export default {
 .buyCake {
   font-weight: 500;
   padding-top: 6px;
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
   font-size: 18px;
-  color: #c4c6e7;
+  color: #151505;
 }
 
 .sidebar-menu {
@@ -221,7 +221,7 @@ export default {
 }
 .sidebar-menu-item a {
   display: flex;
-  color: #c4c6e7;
+  color: #151505;
   align-items: center;
   gap: 10px;
   padding: 8px 0;
@@ -233,23 +233,23 @@ export default {
 }
 .sidebar-menu-item:hover a span {
   transition: color 0.3 linear;
-  color: #e6e7ff;
+  color: #9dc64e;
 }
 .sidebar-menu-item img {
   height: 20px;
 }
 .sidebar-menu-item-nonlast {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #000000;
 }
 .sidebar-locale {
   display: flex;
   align-items: center;
-  background-color: #190053;
+  background-color: #9dc64e;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 15px 0px;
-  color: #c4c6e7;
-  font-family: "Rancho", cursive;
+  color: #151505;
+  font-family: "Arial";
   font-size: 18px;
   border-radius: 20px;
   padding: 8px 15px;
@@ -266,22 +266,22 @@ export default {
 }
 .sidebar-locale:hover span {
   transition: color 0.1s linear;
-  color: #e6e7ff;
+  color: #9dc64e;
 }
 .sidebar-locale img {
   height: 20px;
 }
 
 .logoutText {
-  color: #c4c6e7;
+  color: #151505;
   font-weight: 500;
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
   font-size: 18px;
   padding-top: 4px;
 }
 
 a#Fuse Explorer{
-  color: #c4c6e7;
+  color: #151505;
 }
 a#bscscan:hover {
   color: #fff;

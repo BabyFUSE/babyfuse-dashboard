@@ -191,7 +191,7 @@ html {
   cursor: pointer;
   border: none;
   background-image: linear-gradient(-90deg, rgb(58, 179, 176) 0%, rgb(110, 99, 157) 100%);
-  color: #c4c6e7;
+  color: #151505;
   -webkit-appearance: none;
   text-align: center;
   -webkit-box-sizing: border-box;
@@ -208,7 +208,7 @@ html {
 
   font-size: 22px !important;
   font-weight: 500;
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
 }
 
 #connectBtn:active,

@@ -20,7 +20,7 @@
             <a
               :href="`https://explorer.fuse.io/token/${mkatAddress}`"
               target="_blank"
-              style="color: rgb(4, 131, 174); font-size: 20px; word-break: break-all"
+              style="color: rgb(5, 0, 111)); font-size: 20px; word-break: break-all"
             >
               view on Fuse Explorer
             </a>

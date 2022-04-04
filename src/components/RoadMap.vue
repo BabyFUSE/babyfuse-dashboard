@@ -130,7 +130,7 @@ export default {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: #000000;
   border: 1px solid rgba(0, 34, 51, 0.1);
   box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
   border-radius: 0.15rem;

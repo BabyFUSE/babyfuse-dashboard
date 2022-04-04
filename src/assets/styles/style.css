@@ -75,8 +75,8 @@ p {
 }
 
 #dark-mode {
-  background: #c4c6e7;
-  color: #190053;
+  background: #151505;
+  color: #9dc64e;
   overflow-x: hidden;
   position: relative;
   height: 100%;
@@ -989,7 +989,7 @@ textarea::placeholder {
   width: 450px;
   border-radius: 25px;
   border: 1px solid rgb(255 118 87 / 45%);
-  background-color: #190053;
+  background-color: #9dc64e;
 
   margin: 0 auto !important;
 }
@@ -1008,24 +1008,24 @@ textarea::placeholder {
   font-size: 22px;
 
   margin-top: 15px;
-  color: #c4c6e7;
+  color: #151505;
   text-align: center;
   font-weight: 500;
 
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
 }
 
 .section-2 .content-main {
   border-radius: 5px;
-  background-color: #c4c6e7;
+  background-color: #151505;
   margin-top: 15px;
   padding: 15px 5px;
-  color: #190053;
+  color: #9dc64e;
   font-weight: 500;
 
   font-size: 24px;
   line-height: 1.1;
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
 }
 
 .section-2 .content-main .text-1 {
@@ -1068,7 +1068,7 @@ textarea::placeholder {
 
 .moonkat-sidebar .logo-and-buy .mrat-desc {
   font-size: 20px;
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
   color: #00aaa6;
   text-align: center;
   font-weight: 700;
@@ -1095,30 +1095,30 @@ textarea::placeholder {
   border-radius: 20px !important;
   font-size: 15px !important;
   -webkit-transition: all 0.3s linear;
-  color: #fff;
+  color: #000;
   transition: all 0.3s ease;
   height: 34px;
 }
 
 .button-custom-new,
 .content-tabs .el-tabs__active-bar {
-  background-image: linear-gradient(-90deg, rgb(58, 179, 176) 0%, rgb(110, 99, 157) 100%);
+  background-image: linear-gradient(-90deg, rgb(53, 112, 7) 0%, rgb(205, 188, 21) 100%);
 }
 
 .button-custom-new:hover {
   background-size: 200% auto;
   background-position: 100%;
-  background-image: linear-gradient(90deg, rgb(58, 179, 176) 0%, rgb(110, 99, 157) 100%);
-  color: #ffffff;
+  background-image: linear-gradient(90deg, rgb(53, 112, 7) 0%, rgb(205, 188, 21) 100%);
+  color: #000000;
 }
 
 .moonkat-sidebar .address-info {
-  background-color: #190053;
-  font-family: "Rancho", cursive;
+  background-color: #9dc64e;
+  font-family: "Arial";
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 15px;
-  color: #fff;
+  color: #000;
   border-radius: 20px;
   padding: 10px 15px 15px 15px;
 }
@@ -1137,19 +1137,19 @@ textarea::placeholder {
 }
 .moonkat-sidebar .address-info .text-1 {
   font-size: 24px;
-  color: #c4c6e7;
+  color: #151505;
   font-weight: 500;
 }
 .moonkat-sidebar .address-info .text-2 {
   margin-top: 17px;
   font-size: 18px;
   line-height: 1.5;
-  color: #c4c6e7;
+  color: #151505;
 }
 .moonkat-sidebar .address-info .text-3 {
   font-size: 15px;
   font-weight: 500;
-  color: #f1f1f5;
+  color: #000;
 }
 .moonkat-sidebar .address-info .text-4 {
   font-size: 14px;
@@ -1218,7 +1218,7 @@ textarea::placeholder {
 }
 /*============tabs css start==============*/
 .card {
-  background-color: #ffffff;
+  background-color: #000000;
   border: 1px solid rgba(0, 34, 51, 0.1);
   box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
   border-radius: 0.15rem;
@@ -1240,19 +1240,19 @@ textarea::placeholder {
 }
 .tab-card-header > .nav-tabs > li > a {
   border: 0;
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
   font-size: 20px;
   border-bottom: 2px solid transparent;
   margin-right: 0;
-  color: #190053;
+  color: #9dc64e;
   padding: 2px 0px;
   margin-right: 21px;
 }
 .tab-card-header > .nav-tabs > li > a.show {
   border-bottom: 2px solid #ff7657;
-  color: #190053;
+  color: #9dc64e;
   background: transparent;
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
 }
 .tab-card-header > .nav-tabs > li > a:hover {
   color: #fff;
@@ -1348,7 +1348,7 @@ textarea::placeholder {
 }
 .disruptive-transfer-wrapper .button-max .el-button {
   background-image: none !important;
-  color: #04abea;
+  color: #ccff66;
   background: transparent;
   border: none;
 }
@@ -1423,27 +1423,27 @@ textarea::placeholder {
 .statistic-all {
   border-radius: 30px;
   border: 1px solid rgb(255 118 87 / 37%);
-  background-color: #190053;
+  background-color: #9dc64e;
   padding: 35px 35px;
   margin-top: 10px;
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
 }
 .statistic-all .statistic-p1 {
   border-radius: 10px;
   border: 1px solid rgb(255 118 87 / 37%);
-  background-color: #c4c6e7;
+  background-color: #151505;
   padding: 15px 27px;
 }
 .statistic-all .statistic-p1 .text-1 {
   font-size: 20px;
   font-weight: 500;
-  color: #190053;
+  color: #9dc64e;
 }
 .statistic-all .statistic-p1 .text-2[data-v-6048b2f5] {
   font-size: 18px;
   font-weight: 400;
   margin-top: 8px;
-  color: #190053;
+  color: #9dc64e;
 }
 
 .statistic-all .mt-25 {
@@ -1461,9 +1461,9 @@ textarea::placeholder {
 .claim-reward .claim-reward-content {
   margin: 26px 10px 0px;
   border-radius: 20px;
-  background-color: #c4c6e7;
+  background-color: #151505;
   padding: 10px;
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
   font-size: 20px;
 }
 
@@ -1530,7 +1530,7 @@ textarea::placeholder {
 
 /*============tabs css start==============*/
 .card {
-  background-color: #ffffff;
+  background-color: #000000;
   border: 1px solid rgba(0, 34, 51, 0.1);
   box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
   border-radius: 0.15rem;
@@ -1562,7 +1562,7 @@ textarea::placeholder {
 /*============disruptive css============*/
 .disruptive-transfer-wrapper {
   border: 1px solid rgb(255 118 87 / 37%);
-  background-color: #190053;
+  background-color: #9dc64e;
   border-radius: 30px;
   height: 600px;
   display: -webkit-box;
@@ -1578,14 +1578,14 @@ textarea::placeholder {
   height: 273px;
   border-radius: 20px;
   border: 1px solid rgb(255 118 87 / 37%);
-  background-color: #c4c6e7;
+  background-color: #151505;
   margin: auto;
   padding: 25px 50px;
 }
 .disruptive-transfer-wrapper .form-wrapper .text-main {
   font-size: 16px;
   font-weight: 500;
-  color: #190053;
+  color: #9dc64e;
   margin-bottom: 25px;
 }
 .el-form-item {
@@ -1614,7 +1614,7 @@ textarea::placeholder {
 }
 .disruptive-transfer-wrapper .el-input__inner {
   background-color: transparent;
-  border: 2px solid #190053;
+  border: 2px solid #9dc64e;
 }
 .el-input--medium .el-input__inner {
   height: 36px;
@@ -1652,7 +1652,7 @@ textarea::placeholder {
 }
 .disruptive-transfer-wrapper .button-max .el-button {
   background-image: none !important;
-  color: #190053;
+  color: #9dc64e;
   font-weight: 500;
   background: transparent;
   border: none;
@@ -1701,7 +1701,7 @@ textarea::placeholder {
   background-image: linear-gradient(-90deg, rgb(58, 179, 176) 0%, rgb(110, 99, 157) 100%);
   border: 1px solid #dcdfe6;
   border-color: #dcdfe6;
-  color: #ffffff;
+  color: #000000;
   -webkit-appearance: none;
   text-align: center;
   -webkit-box-sizing: border-box;
@@ -1788,7 +1788,7 @@ textarea::placeholder {
 
 /*============tabs css start==============*/
 .card {
-  background-color: #ffffff;
+  background-color: #000000;
   border: 1px solid rgba(0, 34, 51, 0.1);
   box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
   border-radius: 0.15rem;
@@ -1856,7 +1856,7 @@ textarea::placeholder {
 }
 
 .claim-reward .claim-reward-content .p-1 {
-  border-right: 3px solid #190053;
+  border-right: 3px solid #9dc64e;
   text-align: center;
   color: #fff;
 }
@@ -1894,7 +1894,7 @@ textarea::placeholder {
 .claim-reward .claim-reward-content .button-wrapper .button-custom-new {
   width: 200px;
   height: 44px;
-  color: #c4c6e7;
+  color: #151505;
   font-weight: 500;
   border: none;
   font-size: 15px !important;
@@ -1918,7 +1918,7 @@ textarea::placeholder {
 }
 
 .claim-reward .statistic-wrapper .item-statistic .p-1 {
-  border-right: 2px solid #190053;
+  border-right: 2px solid #9dc64e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1931,7 +1931,7 @@ textarea::placeholder {
 }
 
 .claim-reward .statistic-wrapper .item-statistic {
-  background-color: #c4c6e7;
+  background-color: #151505;
   border-radius: 20px;
   padding: 5px;
   width: 48%;
@@ -1940,7 +1940,7 @@ textarea::placeholder {
 
 .claim-reward .statistic-wrapper {
   margin: 25px 10px 0px;
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

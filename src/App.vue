@@ -117,7 +117,7 @@ a:hover {
 .loading {
   margin: 0 auto;
   font-size: 22px;
-  font-family: "Rancho", cursive;
+  font-family: "Arial";
 }
 
 .loading-container {
@@ -236,7 +236,7 @@ textarea::placeholder {
 @media (max-width: 991px) {
   .navbar-light .navbar-nav .nav-link {
     margin: 18px;
-    color: #fff;
+    color: #000;
     line-height: 0;
   }
 
@@ -255,19 +255,19 @@ textarea::placeholder {
   }
 
   .navbar-light .navbar-brand {
-    color: #fff;
+    color: #000;
   }
 
   .navbar-light .navbar-brand:hover {
-    color: #fff;
+    color: #000;
   }
 
   .nav-bg .navbar-brand:hover {
-    color: #fff;
+    color: #000;
   }
 
   .nav-bg .navbar-brand {
-    color: #fff;
+    color: #000;
   }
 
   .navbar-light .navbar-nav .nav-link.active::after {

@@ -67,12 +67,12 @@
                       <div v-if="!isRewardClaimAvailable" class="disabled-overlay w-100 h-100"></div>
                       <div class="row">
                         <div class="col-sm-3 p-1">
-                          <div class="title-1" style="color: #190053">Reward Pool</div>
+                          <div class="title-1" style="color: #9dc64e">Reward Pool</div>
                           <div class="image-content">
                             <img src="@/assets/images/beaglepancakesx.png" alt="image-pancake" />
                             <img src="@/assets/images/hand.png" class="image-reward-pool" />
                           </div>
-                          <div class="title-2" style="color: #190053">FUSE <span class="card-panel-num"> </span></div>
+                          <div class="title-2" style="color: #9dc64e">FUSE <span class="card-panel-num"> </span></div>
                         </div>
                         <div class="col-sm-9 p-2">
                           <div class="title-1">
@@ -128,7 +128,7 @@
                           </div>
                           <div class="col-sm-8 p-2">
                             <div class="text-1">Total Supply</div>
-                            <div class="text-2" style="color: #190053">
+                            <div class="text-2" style="color: #9dc64e">
                               <span class="card-panel-num">100,000,000,000 {{ tokenSymbol }} </span>
                             </div>
                           </div>
@@ -140,8 +140,8 @@
                             <img src="@/assets/images/beaglepancake2.png" class="img-icon" />
                           </div>
                           <div class="col-sm-8 p-2">
-                            <div class="text-1" style="color: #190053">Total Liquidity Pool</div>
-                            <div class="text-2" style="color: #190053">
+                            <div class="text-1" style="color: #9dc64e">Total Liquidity Pool</div>
+                            <div class="text-2" style="color: #9dc64e">
                               <span>$</span><span class="card-panel-num"> {{ totalLiquidityPoolUSD }} </span>
                             </div>
                           </div>
@@ -153,8 +153,8 @@
                             <img src="@/assets/images/beaglepool.png" class="img-icon" />
                           </div>
                           <div class="col-sm-8 p-2">
-                            <div class="text-1" style="color: #190053">Total FUSE in liquidity pool</div>
-                            <div class="text-2" style="color: #190053">
+                            <div class="text-1" style="color: #9dc64e">Total FUSE in liquidity pool</div>
+                            <div class="text-2" style="color: #9dc64e">
                               <span> {{ totalBnbInPool }} </span><span class="card-panel-num"> FUSE </span>
                             </div>
                           </div>
@@ -167,7 +167,7 @@
                           </div>
                           <div class="col-sm-8 p-2">
                             <div class="text-1">100,000 {{ tokenSymbol }} price</div>
-                            <div class="text-2" style="color: #190053">
+                            <div class="text-2" style="color: #9dc64e">
                               <span class="card-panel-num">$ {{ hundredThousandMKATUSD }} </span>
                             </div>
                           </div>
@@ -520,7 +520,7 @@ export default {
 
 .info-container {
   border-radius: 20px;
-  background-color: #190053;
+  background-color: #9dc64e;
 }
 .social-links-container {
   display: flex;
@@ -562,7 +562,7 @@ export default {
 }
 
 .el-button.button-send-disruptive.el-button--primary.el-button--medium span {
-  color: #c4c6e7;
+  color: #151505;
   font-weight: 500;
   padding-top: 4px;
   font-size: 15px;
@@ -570,20 +570,20 @@ export default {
 
 .el-button.button-send-disruptive.el-button--primary.el-button--medium:hover span {
   transition: color 0.3 linear;
-  color: #e6e7ff;
+  color: #9dc64e;
 }
 
 .el-input__inner::-webkit-input-placeholder {
-  color: #190053 !important;
+  color: #9dc64e !important;
 }
 .el-input__inner:-moz-placeholder {
-  color: #190053 !important;
+  color: #9dc64e !important;
 }
 .el-input__inner::-moz-placeholder {
-  color: #190053 !important;
+  color: #9dc64e !important;
 }
 .el-input__inner:-ms-input-placeholder {
-  color: #190053 !important;
+  color: #9dc64e !important;
 }
 
 .howToBuy {

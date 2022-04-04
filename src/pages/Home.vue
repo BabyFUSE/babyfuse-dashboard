@@ -26,14 +26,14 @@ import router from '../routes';
 export default {
   name: "Home",
   components: {
-    // Footer,
-    // Contacts,
-    // Media,
-    // Team,
-    // RoadMap,
-    // Tokenomics,
-    // Features,
-    // Banner,
+//    Footer,
+//    Contacts,
+//    Media,
+//    Team,
+//    RoadMap,
+//    Tokenomics,
+//    Features,
+//    Banner,
   },
   mounted() {
     router.replace({path: "/dashboard"});
