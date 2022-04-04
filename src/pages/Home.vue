@@ -37,7 +37,7 @@ export default {
   },
   mounted() {
     router.replace({path: "/dashboard"});
-    // console.log(this.signer, this.signerAddress, this.contract);
+    console.log(this.signer, this.signerAddress, this.contract);
   },
 };
 </script>

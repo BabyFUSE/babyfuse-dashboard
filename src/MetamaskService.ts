@@ -19,7 +19,7 @@ export enum WalletType {
 
 const WBNB_ADDRESS = "0x0BE9e53fd7EDaC9F859882AfdDa116645287C629";  // testnet: "0xae13d989dac2f0debff460ac112a837c89baa7cd"
                                                                     // mainnet: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
-const BUSD_ADDRESS = "0x6a5f6a8121592becd6747a38d67451b310f7f156";  // testnet: "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7"
+const BUSD_ADDRESS = "0x6a5f6a8121592becd6747a38d67451b310f7f156";  // testnet: "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7" 
                                                                     // mainnet: "0x55d398326f99059ff775485246999027b3197955"
 
 
@@ -50,8 +50,8 @@ export default class MetamaskService {
   public static async createWalletProviderFromType(type: WalletType) {
     if (type == WalletType.WalletConnect) {
       const walletConnectProvider = new WalletConnectProvider({
-        rpc: { 122: "https://rpc.fuse.io/" },
-        chainId: 122,
+        rpc: { 56: "https://bsc-dataseed.binance.org/" },
+        chainId: 56,
         qrcode: true, // Required
       });
 
