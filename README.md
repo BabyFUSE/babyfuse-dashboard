@@ -1,4 +1,8 @@
-# moonkat-vue
+# BabyFUSE on Fuse Network
+
+0x9A5De7C8faEacD606cE7F46422A6286C15a55F60
+
+https://babyfuse.finance
 
 ## Project setup
 ```
