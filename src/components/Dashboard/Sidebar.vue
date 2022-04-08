@@ -63,6 +63,14 @@
           <img src="@/assets/images/charts.png" alt="" />
           <span>Contract</span>
         </a>
+      </div><div
+        class="sidebar-menu-item sidebar-menu-item-nonlast"
+        @click="redirectTo(`https://docs.babyfuse.finance`)"
+      >
+        <a>
+          <img src="@/assets/images/book.png" alt="" />
+          <span>Whitepaper</span>
+        </a>
       </div>
       <div
         class="sidebar-menu-item"
@@ -71,6 +79,15 @@
         <a>
           <img src="@/assets/images/chartsup.png" alt="" />
           <span>Chart</span>
+        </a>
+      </div>
+      <div
+        class="sidebar-menu-item"
+        @click="redirectTo(`https://explorer.fuse.io/address/0x9A5De7C8faEacD606cE7F46422A6286C15a55F60/write-contract`)"
+      >
+        <a>
+          <img src="@/assets/images/claim.png" alt="" />
+          <span>Manual Claim</span>
         </a>
       </div>
     </div>
