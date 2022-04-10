@@ -37,7 +37,7 @@ Router Used NextGEN Finance 0x6d6cF5767651F68EFb3EC1d9d7d1d93f9A41Eedc
 
 Email Babyfusemoney@gmail.com (Pp)
 
-Web https:://www.babyfuse.finance
+Web https://www.babyfuse.finance
 
 Twitter @babyfusemoney
 
