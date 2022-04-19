@@ -305,7 +305,12 @@ function classList(props) {
 
   var classes = (_classes = {
     'fa-spin': props.spin,
+    'fa-spin-pulse': props.spinPulse,
+    'fa-spin-reverse': props.spinReverse,
     'fa-pulse': props.pulse,
+    'fa-beat': props.beat,
+    'fa-fade': props.fade,
+    'fa-flash': props.flash,
     'fa-fw': props.fixedWidth,
     'fa-border': props.border,
     'fa-li': props.listItem,
@@ -328,6 +333,12 @@ function addStaticClass(to, what) {
 }
 
 function normalizeIconArgs(icon$$1) {
+  // this has everything that it needs to be rendered which means it was probably imported
+  // directly from an icon svg package
+  if (icon$$1 && (typeof icon$$1 === 'undefined' ? 'undefined' : _typeof(icon$$1)) === 'object' && icon$$1.prefix && icon$$1.iconName && icon$$1.icon) {
+    return icon$$1;
+  }
+
   if (parse.icon) {
     return parse.icon(icon$$1);
   }
@@ -355,11 +366,23 @@ var FontAwesomeIcon = {
   functional: true,
 
   props: {
+    beat: {
+      type: Boolean,
+      default: false
+    },
     border: {
       type: Boolean,
       default: false
     },
+    fade: {
+      type: Boolean,
+      default: false
+    },
     fixedWidth: {
+      type: Boolean,
+      default: false
+    },
+    flash: {
       type: Boolean,
       default: false
     },
@@ -408,10 +431,18 @@ var FontAwesomeIcon = {
       type: String,
       default: null,
       validator: function validator(value) {
-        return ['lg', 'xs', 'sm', '1x', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'].indexOf(value) > -1;
+        return ['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', '1x', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'].indexOf(value) > -1;
       }
     },
     spin: {
+      type: Boolean,
+      default: false
+    },
+    spinPulse: {
+      type: Boolean,
+      default: false
+    },
+    spinReverse: {
       type: Boolean,
       default: false
     },

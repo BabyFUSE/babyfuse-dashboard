@@ -4,6 +4,12 @@ import log from '../logger'
 import { objectWithKey, classList } from '../utils'
 
 function normalizeIconArgs (icon) {
+  // this has everything that it needs to be rendered which means it was probably imported
+  // directly from an icon svg package
+  if (icon && typeof icon === 'object' && icon.prefix && icon.iconName && icon.icon) {
+    return icon
+  }
+
   if (faParse.icon) {
     return faParse.icon(icon)
   }
@@ -31,11 +37,23 @@ export default {
   functional: true,
 
   props: {
+    beat: {
+      type: Boolean,
+      default: false
+    },
     border: {
       type: Boolean,
       default: false
     },
+    fade: {
+      type: Boolean,
+      default: false
+    },
     fixedWidth: {
+      type: Boolean,
+      default: false
+    },
+    flash: {
       type: Boolean,
       default: false
     },
@@ -77,9 +95,17 @@ export default {
     size: {
       type: String,
       default: null,
-      validator: (value) => ['lg', 'xs', 'sm', '1x', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'].indexOf(value) > -1
+      validator: (value) => ['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', '1x', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x'].indexOf(value) > -1
     },
     spin: {
+      type: Boolean,
+      default: false
+    },
+    spinPulse: {
+      type: Boolean,
+      default: false
+    },
+    spinReverse: {
       type: Boolean,
       default: false
     },

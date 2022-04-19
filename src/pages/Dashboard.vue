@@ -24,7 +24,7 @@
                             aria-controls="One"
                             aria-selected="true"
                             @click.prevent="setActive('one')"
-                            >Claim FUSE</a
+                            >Claim fUSD</a
                           >
                         </li>
                         <li class="nav-item">
@@ -72,15 +72,15 @@
                             <img src="@/assets/images/beaglepancakesx.png" alt="image-pancake" />
                             <img src="@/assets/images/hand.png" class="image-reward-pool" />
                           </div>
-                          <div class="title-2" style="color: #9dc64e">FUSE <span class="card-panel-num"> </span></div>
+                          <div class="title-2" style="color: #9dc64e">fUSD <span class="card-panel-num"> </span></div>
                         </div>
                         <div class="col-sm-9 p-2">
                           <div class="title-1">
-                            Available reward: <span class="bold">{{ cakeAvailableReward }} FUSE</span>
+                            Available reward: <span class="bold">{{ cakeAvailableReward }} fUSD</span>
                           </div>
 
                           <div class="title-1 mt-3">
-                            Total rewards: <span class="bold">{{ cakeTotalGainedReward }} FUSE</span>
+                            Total rewards: <span class="bold">{{ cakeTotalGainedReward }} fUSD</span>
                           </div>
 
                           <div v-if="nextClaimDate != '0'" class="title-2">
@@ -106,7 +106,7 @@
                                   <div class="buyCard">
                                     <div class="buyCardBody">
                                       <i class="giftIcon"></i>
-                                      <span>Claim my FUSE</span>
+                                      <span>Claim my fUSD</span>
                                     </div>
                                   </div>
                                 </div>
@@ -195,7 +195,7 @@
                               <div class="main-title">CLAIM REWARD SUCCESSFULLY!</div>
                               <!--                                  <img src="@/assets/images/rat_hold_bnb.1d72ec18.png" class="image-logo-token" />-->
                               <div class="reward-content">
-                                <div class="text-1">Your reward: 0.0000 FUSE</div>
+                                <div class="text-1">Your reward: 0.0000 fUSD</div>
                                 <div class="text-2">
                                   Next collectable date: Mon, May 31, 2021 2:04 PM (at your time zone)
                                 </div>
@@ -204,8 +204,8 @@
                                 <div>Share now</div>
                                 <div class="p-1">
                                   <a
-                                    page-title="I just collected 0.0000 FUSE at https://babyfuse.money ! You should give it a try!
-                                                         #BabyFuse #EarnFUSE #FUSENETWORK #FUSE #NextGEN"
+                                    page-title="I just collected 0.0000 fUSD at https://babyfuse.money ! You should give it a try!
+                                                         #BabyFuse #EarnfUSD #FUSENETWORK #FUSE #NextGEN"
                                     button-design="flat"
                                     has-icon="true"
                                     class="button-social twitter__design__flat"
@@ -254,9 +254,9 @@
         <b-button class="mt-3" block>
           <ShareNetwork
             network="twitter"
-            url="dapp.bbabyfuse.money"
+            url="dapp.bbabyfuse.finance"
             :title="
-              `I just claimed ${cakeAvailableReward} FUSE only by holding ${tokenSymbol}  token. You can try it too!`
+              `I just claimed ${cakeAvailableReward} fUSD only by holding ${tokenSymbol}  token. You can try it too!`
             "
             @open="open"
           >
