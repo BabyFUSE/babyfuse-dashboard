@@ -7,10 +7,10 @@
         </router-link>
       </div>
       <div class="mrat-text hide-on-mobile" style="color: #9dc64e">BABYFUSE</div>
-      <div class="mrat-desc">A new way to earn fUSD</div>
+      <div class="mrat-desc">A new way to earn USDC</div>
       <div class="button-buy-mrat hide-on-mobile">
         <a
-          href="https://app.next-gen.finance/swap?outputCurrency=0xe260ed9cF92933D1363A7d5581E2Bf8eA2EA668f"
+          href="https://app.next-gen.finance/swap?outputCurrency=0x1e202c9ff0E03a92C90a7bfdD9d4D2245eB792E8"
           target="_blank"
           class="button-custom-new button-sidebar"
           ><i class="fa fa-shopping-cart"></i>
@@ -74,22 +74,14 @@
       </div>
       <div
         class="sidebar-menu-item"
-        @click="redirectTo(`https://dexscreener.com/fuse/0xF6597B6fdd136fA643d583695Ec6Db99986B4A4d`)"
+        @click="redirectTo(`https://dexscreener.com/fuse/0x558f169edfc30e61d6ec8d2341424a93e2f4e274`)"
       >
         <a>
           <img src="@/assets/images/chartsup.png" alt="" />
           <span>Chart</span>
         </a>
       </div>
-      <div
-        class="sidebar-menu-item"
-        @click="redirectTo(`https://explorer.fuse.io/address/0xe260ed9cF92933D1363A7d5581E2Bf8eA2EA668f/write-contract`)"
-      >
-        <a>
-          <img src="@/assets/images/claim.png" alt="" />
-          <span>Manual Claim</span>
-        </a>
-      </div>
+      
     </div>
     <div class="sidebar-locale">
       <img src="@/assets/images/globus.png" alt="" />

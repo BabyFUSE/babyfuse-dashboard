@@ -44,7 +44,7 @@
           <div class="text-2">{{ currentCircularingBalance }} {{ tokenSymbol }}</div>
         </div>
         <div class="item-statistic col-sm-6 col-md-3 mt-3 mt-md-0">
-          <div class="text-1">Contract fUSD reward pool</div>
+          <div class="text-1">Contract USDC reward pool</div>
           <div class="text-2">{{ contractBNBRewardPool }} FUSE</div>
         </div>
       </div>

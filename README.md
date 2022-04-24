@@ -1,9 +1,9 @@
 # BabyFUSE on Fuse Network
 
 Baby Fuse Token Address (verified and published on fuseexplorer) 
-0xe260ed9cF92933D1363A7d5581E2Bf8eA2EA668f 
+0x1e202c9ff0E03a92C90a7bfdD9d4D2245eB792E8 
 
-https://explorer.fuse.io/address/0xe260ed9cF92933D1363A7d5581E2Bf8eA2EA668f/transactions
+https://explorer.fuse.io/address/0x1e202c9ff0E03a92C90a7bfdD9d4D2245eB792E8/transactions
 
 
 Tokenomics
@@ -24,12 +24,12 @@ Div Tracker 0x9B83723735D72c65FC3679A5F429A43a6237Dd0D
 Rewards Token FUSE 0x0BE9e53fd7EDaC9F859882AfdDa116645287C629
 
 
-Chart https://dexscreener.com/fuse/0xe260ed9cF92933D1363A7d5581E2Bf8eA2EA668f
+Chart https://dexscreener.com/fuse/0x1e202c9ff0E03a92C90a7bfdD9d4D2245eB792E8
 
-Analytics https://app.next-gen.finance/info/token/0xe260ed9cF92933D1363A7d5581E2Bf8eA2EA668f
+Analytics https://app.next-gen.finance/info/token/0x1e202c9ff0E03a92C90a7bfdD9d4D2245eB792E8
 
 
-Pair Address 0xe260ed9cF92933D1363A7d5581E2Bf8eA2EA668f
+Pair Address 0x1e202c9ff0E03a92C90a7bfdD9d4D2245eB792E8
 
 Router Used NextGEN Finance 0x6d6cF5767651F68EFb3EC1d9d7d1d93f9A41Eedc
 
