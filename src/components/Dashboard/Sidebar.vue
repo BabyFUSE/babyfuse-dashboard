@@ -63,13 +63,23 @@
           <img src="@/assets/images/charts.png" alt="" />
           <span>Contract</span>
         </a>
-      </div><div
+      </div>
+      <div
         class="sidebar-menu-item sidebar-menu-item-nonlast"
         @click="redirectTo(`https://docs.babyfuse.finance`)"
       >
         <a>
           <img src="@/assets/images/book.png" alt="" />
           <span>Whitepaper</span>
+        </a>
+      </div>
+      <div
+        class="sidebar-menu-item sidebar-menu-item-nonlast"
+        @click="redirectTo(`https://raw.githubusercontent.com/BabyFUSE/babyfuse-dashboard/master/public/babyfuseAudit.pdf`)"
+      >
+        <a>
+          <img src="@/assets/images/shield.png" alt="" />
+          <span>Audit</span>
         </a>
       </div>
       <div
@@ -81,7 +91,7 @@
           <span>Chart</span>
         </a>
       </div>
-      
+
     </div>
     <div class="sidebar-locale">
       <img src="@/assets/images/globus.png" alt="" />
