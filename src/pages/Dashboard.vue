@@ -111,7 +111,7 @@
                           <div class="col-sm-8 p-2">
                             <div class="text-1">Total Supply</div>
                             <div class="text-2" style="color: #9dc64e">
-                              <span class="card-panel-num">100,000,000,000 {{ tokenSymbol }} </span>
+                              <span class="card-panel-num">1,000,000,000,000,000 {{ tokenSymbol }} </span>
                             </div>
                           </div>
                         </div>
@@ -124,7 +124,7 @@
                           <div class="col-sm-8 p-2">
                             <div class="text-1" style="color: #9dc64e">Total Liquidity Pool</div>
                             <div class="text-2" style="color: #9dc64e">
-                              <span>$</span><span class="card-panel-num"> {{ totalLiquidityPoolUSD }} </span>
+                              <span>$</span><span class="card-panel-num"> {{ totalLiquidityPoolUSD * 10}} </span>
                             </div>
                           </div>
                         </div>
@@ -148,9 +148,9 @@
                             <img src="@/assets/images/beaglecakeLogo.png" class="img-icon" />
                           </div>
                           <div class="col-sm-8 p-2">
-                            <div class="text-1">100,000 {{ tokenSymbol }} price</div>
+                            <div class="text-1">{{ tokenSymbol }} Marketcap</div>
                             <div class="text-2" style="color: #9dc64e">
-                              <span class="card-panel-num">$ {{ hundredThousandMKATUSD }} </span>
+                              <span class="card-panel-num">$ {{ hundredThousandMKATUSD * 10000 }} </span>
                             </div>
                           </div>
                         </div>

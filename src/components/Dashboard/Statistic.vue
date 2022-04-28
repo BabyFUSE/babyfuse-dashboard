@@ -8,7 +8,7 @@
         </div>
         <div class="item-statistic col-sm-6 col-md-3 mt-3 mt-sm-0">
           <div class="text-1">Total Supply</div>
-          <div class="text-2">100,000,000,000 {{ tokenSymbol }}</div>
+          <div class="text-2">1,000,000,000,000,000 {{ tokenSymbol }}</div>
         </div>
         <div class="item-statistic col-sm-6 col-md-3 mt-3 mt-md-0">
           <div class="text-1">Total Burned</div>
@@ -36,7 +36,7 @@
           <div class="text-1">Market Cap</div>
           <div class="text-2">
             $
-            <span class="card-panel-num"> {{ marketCap }} </span>
+            <span class="card-panel-num"> {{ marketCap}} </span>
           </div>
         </div>
         <div class="item-statistic col-sm-6 col-md-3 mt-3 mt-md-0">
@@ -44,28 +44,28 @@
           <div class="text-2">{{ currentCircularingBalance }} {{ tokenSymbol }}</div>
         </div>
         <div class="item-statistic col-sm-6 col-md-3 mt-3 mt-md-0">
-          <div class="text-1">Contract USDC reward pool</div>
-          <div class="text-2">{{ contractBNBRewardPool }} FUSE</div>
+          <div class="text-1">Rewards</div>
+          <div class="text-2">{{ contractBNBRewardPool }} USDC</div>
         </div>
       </div>
     </div>
     <div class="statistic-p1 mt-25">
       <div class="row">
         <div class="item-statistic col-sm-6 col-md-3">
-          <div class="text-1">100,000 {{ tokenSymbol }} price</div>
+          <div class="text-1">10 Bil {{ tokenSymbol }} price</div>
           <div class="text-2">
-            <span class="card-panel-num">$ {{ hundredthousandmkatusd }} </span>
+            <span class="card-panel-num">$ {{ hundredthousandmkatusd * 10000000 }} </span>
           </div>
         </div>
         <div class="item-statistic col-sm-6 col-md-3 mt-3 mt-sm-0">
           <div class="text-1">Total Liquidity Pool</div>
           <div class="text-2">
-            <span class="card-panel-num"> $ {{ totalliquiditypoolusd }} </span>
+            <span class="card-panel-num"> $ {{ totalliquiditypoolusd * 10 }} </span>
           </div>
         </div>
         <div class="item-statistic col-sm-6 col-md-3 mt-3 mt-md-0">
-          <div class="text-1">Total FUSE in liquidity pool</div>
-          <div class="text-2">{{ totalbnbinpool }} FUSE</div>
+          <div class="text-1">FUSE in liquidity pool</div>
+          <div class="text-2">{{ totalbnbinpool}} FUSE</div>
         </div>
       </div>
     </div>
@@ -128,7 +128,7 @@ export default {
 
       this.tokenSymbol = await this.contract.symbol();
 
-      this.marketCap = parseFloat(await this.calculateMarketCap(service)).toFixed(2);
+      this.marketCap = parseFloat(await this.calculateMarketCap(service) * 100).toFixed(2);
 
       this.totalBurn = await this.calculateTotalBurnPercent(service);
 
@@ -151,7 +151,7 @@ export default {
       return (((zero + burn) * 100) / total).toFixed(2);
     },
     async getCurrentCircularingBalance() {
-      const { total, zero, burn } = await this.getCircularingBalances();
+      const { total, zero, burn, dev, deploy } = await this.getCircularingBalances();
       return total.sub(burn).sub(zero);
     },
     async getCircularingBalances() {
